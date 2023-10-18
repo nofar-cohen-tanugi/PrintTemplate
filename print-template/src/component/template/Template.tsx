@@ -1,4 +1,4 @@
-import { ITemplate } from '../../model/Template/ITemplate.model';
+import { ITemplate } from '../../model/template/ITemplate.model';
 
 export const Template = (props: ITemplate) => {
   const { content, background, textColor } = props;
