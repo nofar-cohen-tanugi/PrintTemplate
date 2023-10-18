@@ -17,6 +17,7 @@ export const Saturday = () => {
 
   const onSubmit: SubmitHandler<ISaturday> = (data) => {
     navigate('/saturday-style');
+    sessionStorage.setItem('saturdayStyle', JSON.stringify(data));
   };
 
   const { inputSettings } = useSaturdaySettings();
