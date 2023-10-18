@@ -4,6 +4,7 @@ import { useSaturdaySettings } from './useSaturdaySettings';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'primereact/button';
 import { PrimeIcons } from 'primereact/api';
+import { useNavigate } from 'react-router';
 
 export const Saturday = () => {
   const {
@@ -12,11 +13,10 @@ export const Saturday = () => {
     formState: { errors },
   } = useForm<ISaturday>();
   const { t } = useTranslation(['saturday', 'common'], { lng: 'he' });
+  const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<ISaturday> = (data) => {
-    console.log('====================================');
-    console.log(data);
-    console.log('====================================');
+    navigate('/saturday-style');
   };
 
   const { inputSettings } = useSaturdaySettings();

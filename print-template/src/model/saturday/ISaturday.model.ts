@@ -6,5 +6,4 @@ export interface ISaturday {
     musaf: string;
     manchaSaturdayNight: string;
     arvitSaturdayNight: string;
-
 }
