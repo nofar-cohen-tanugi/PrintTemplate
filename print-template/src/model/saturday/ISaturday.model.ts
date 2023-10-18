@@ -1,4 +1,5 @@
 export interface ISaturday {
+    parasha: string;
     manchaFridayNight: string;
     saturdayEntry: string;
     shacharit: string;
