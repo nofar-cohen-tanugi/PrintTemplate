@@ -1,7 +1,6 @@
-export interface ISabbath {
+export interface ISaturday {
     manchaFridayNight: string;
     saturdayEntry: string;
-    arvitaFridayNight: string;
     shacharit: string;
     musaf: string;
     manchaSaturdayNight: string;

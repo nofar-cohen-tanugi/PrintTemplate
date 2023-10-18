@@ -1,9 +1,9 @@
 import { InputMask } from 'primereact/inputmask';
-import { ISabbath } from '../../model/sabbath/sabbath.model';
 import { ControllerProps } from 'react-hook-form';
+import { ISaturday } from '../../model/saturday/ISaturday.model';
 
-export const useSabbathSettings = () => {
-  const inputSettings: ControllerProps<ISabbath, keyof ISabbath>[] = [
+export const useSaturdaySettings = () => {
+  const inputSettings: ControllerProps<ISaturday, keyof ISaturday>[] = [
     {
       name: 'manchaFridayNight',
       render: (field) => (
@@ -12,12 +12,6 @@ export const useSabbathSettings = () => {
     },
     {
       name: 'saturdayEntry',
-      render: (field) => (
-        <InputMask {...field} mask='00:00' className='w-5rem' />
-      ),
-    },
-    {
-      name: 'arvitaFridayNight',
       render: (field) => (
         <InputMask {...field} mask='00:00' className='w-5rem' />
       ),

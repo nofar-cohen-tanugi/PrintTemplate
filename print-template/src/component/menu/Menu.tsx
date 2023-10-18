@@ -4,8 +4,8 @@ import { PanelMenu } from 'primereact/panelmenu';
 export const Menu = () => {
   const items: MenuItem[] = [
     {
-      label: 'Sabbath',
-      url: '/sabbath',
+      label: 'Saturday',
+      url: '/saturday',
       className: 'flex justify-content-center text-2xl my-2',
     },
     {
