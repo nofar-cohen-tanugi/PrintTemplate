@@ -6,20 +6,23 @@ export const Menu = () => {
     {
       label: 'Sabbath',
       url: '/sabbath',
+      className: 'flex justify-content-center text-2xl my-2',
     },
     {
       label: 'Holiday',
       url: '/holiday',
+      className: 'flex justify-content-center text-2xl my-2',
     },
     {
       label: 'Ad',
       url: '/ad',
+      className: 'flex justify-content-center text-2xl my-2',
     },
   ];
 
   return (
-    <div className='card flex justify-content-center'>
-      <PanelMenu model={items} className='w-full md:w-25rem' />
+    <div className='card h-screen flex justify-content-center align-items-center'>
+      <PanelMenu model={items} className='w-20rem' />
     </div>
   );
 };
