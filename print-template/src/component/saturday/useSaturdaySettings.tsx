@@ -4,7 +4,7 @@ import { ISaturday } from '../../model/saturday/ISaturday.model';
 import { InputText } from 'primereact/inputtext';
 import { useTranslation } from 'react-i18next';
 
-export const useSaturdaySettings = () => {
+export const useSaturdaySettings = (defaultTimes: ITimesResponse) => {
   const { t } = useTranslation('common', { lng: 'he' });
 
   const inputSettings: ControllerProps<ISaturday, keyof ISaturday>[] = [
