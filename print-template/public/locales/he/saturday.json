@@ -8,5 +8,12 @@
     "shacharit": "שחרית של שבת",
     "musaf": "מוסף",
     "manchaSaturdayNight": "מנחה של שבת",
-    "arvitSaturdayNight": "ערבית צאת שבת"
+    "arvitSaturdayNight": "ערבית צאת שבת",
+    "ad": {
+        "selectACity": "בחירת עיר",
+        "noResults": "לא נמצאו תוצאות"
+    },
+    "cities": {
+        "kokav yair": "כוכב יאיר"
+    }
 }
