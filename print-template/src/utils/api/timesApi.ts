@@ -1,5 +1,9 @@
-export const getTimesByCity = (city: string) => {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${process.env.API_KEY}`).then(res => {
-        console.log(res);
-    })
+import { City } from "../../model/saturday/City.model";
+
+export const getTimesByCity = async (city: City) => {
+    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=,${city.code}&appid=${import.meta.env.VITE_API_KEY}`);
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return await response.json();
 }
