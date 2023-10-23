@@ -1,5 +1,8 @@
 {
     "print": "הדפסה",
     "save": "שמירה",
-    "requiredField": "שדה חובה"
+    "requiredField": "שדה חובה",
+    "color": {
+        "blue": "כחול"
+    }
 }
