@@ -29,12 +29,12 @@ export const Saturday = () => {
     updateTimes();
   }, []);
 
+  const { inputSettings } = useSaturdaySettings(times);
+
   const onSubmit: SubmitHandler<ISaturday> = (data) => {
     navigate('/saturday-style');
     sessionStorage.setItem('saturdayStyle', JSON.stringify(data));
   };
-
-  const { inputSettings } = useSaturdaySettings(times);
 
   const getFormErrorMessage = (name: keyof ISaturday) => {
     return errors[name] ? (
