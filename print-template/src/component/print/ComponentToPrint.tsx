@@ -1,7 +1,5 @@
-import { PureComponent } from 'react';
+import { MutableRefObject, forwardRef } from 'react';
 
-export class ComponentToPrint extends PureComponent {
-  render() {
-    return <div></div>;
-  }
-}
+export const ComponentToPrint = forwardRef((props, ref) => {
+  return <div ref={ref as MutableRefObject<null>}></div>;
+});
