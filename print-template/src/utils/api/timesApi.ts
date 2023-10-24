@@ -5,10 +5,8 @@ export const getTimes = async () => {
         throw new Error('Network response was not ok');
     }
     const ipAddress = await response.json();
-
     const coordinatesResponse = await getCoordinatesByIpAddress(ipAddress.ip);
     const timesResponse = await getTimesByCoordinates(coordinatesResponse.latitude, coordinatesResponse.longitude);
-
     return await timesResponse.results;
 }
 
