@@ -119,7 +119,7 @@ export const Saturday = () => {
         <Button
           icon={PrimeIcons.SAVE}
           label={t('common:save')}
-          className='text-2xl'
+          className='text-7xl'
         />
       </form>
     </>

@@ -8,7 +8,7 @@ import { HuePicker } from 'react-color';
 
 export const SaturdayStyle = () => {
   const { t } = useTranslation(['saturday', 'common'], { lng: 'he' });
-  const { inputSettings } = useSaturdaySettings();
+  const { inputSettings } = useSaturdaySettings(undefined);
 
   const [titleColor, setTitleColor] = useState<string>();
   const [greetingColor, setGreetingColor] = useState<string>();
@@ -23,25 +23,17 @@ export const SaturdayStyle = () => {
     return inputSettings.filter((x) => x.name !== 'parasha');
   }, [inputSettings]);
 
-  const parasha = useMemo(() => {
-    return inputSettings.find((x) => x.name === 'parasha');
-  }, [inputSettings]);
-
   const updateContent = useReactToPrint({
     content: () => componentRef.current,
   });
 
-  const handlePrint = () => {
-    updateContent();
-  };
-
   return (
     <>
       <div
-        className='w-full h-screen flex flex-column align-items-start p-2 saturday-style selector'
+        className='w-full h-full flex flex-column align-items-start p-2 saturday-style selector'
         style={{
           backgroundImage: 'url("../public/images/frame.png")',
-          backgroundSize: '100% 96%',
+          backgroundSize: '100% 98%',
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
         }}
@@ -55,21 +47,21 @@ export const SaturdayStyle = () => {
               textShadow: `0px 2px 5px ${titleColor + '20%'}`,
             }}
           >
-            {t(`${parasha?.name}`)} {data?.['parasha']}
+            {data?.['parasha']}
           </h1>
         </div>
         <div className='px-4'>
           {settings?.map((item) => {
             return (
               <div className='flex'>
-                <p className={'font-bold mx-2 text-5xl'}>{t(item.name)}</p>
-                <p className={'mx-2 text-5xl'}>{data?.[item.name]}</p>
+                <p className={'font-bold mx-2 my-4 text-5xl'}>{t(item.name)}</p>
+                <p className={'mx-2 my-4 text-5xl'}>{data?.[item.name]}</p>
               </div>
             );
           })}
         </div>
         <h1
-          className='greeting mx-auto font-bold text-7xl mx-auto'
+          className='greeting mx-auto font-bold text-7xl'
           style={{
             color: greetingColor,
             textShadow: `5px 7px 12px ${greetingColor}`,
@@ -86,14 +78,14 @@ export const SaturdayStyle = () => {
             icon={PrimeIcons.SAVE}
             label={t('common:print')}
             className='text-3xl w-full flex justify-self-center'
-            onClick={handlePrint}
+            onClick={updateContent}
           />
         )}
       />
       <div
         style={{
           position: 'absolute',
-          top: '8rem',
+          top: '9rem',
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
@@ -104,9 +96,9 @@ export const SaturdayStyle = () => {
             setTitleColor(
               `rgba(${e.rgb.r}, ${e.rgb.g}, ${e.rgb.b}, ${e.rgb?.a})`
             );
-            setGreetingColor(`rgba(${e.rgb.r}, ${e.rgb.g}, ${e.rgb.b}, 80%)`);
+            setGreetingColor(`rgba(${e.rgb.r}, ${e.rgb.g}, ${e.rgb.b}, 90%)`);
           }}
-          width='15rem'
+          width='30rem'
         />
       </div>
     </>
