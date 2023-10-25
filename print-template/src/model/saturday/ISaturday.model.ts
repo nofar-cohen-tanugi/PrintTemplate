@@ -1,9 +1,11 @@
 export interface ISaturday {
-    parasha: string;
-    manchaFridayNight: string;
-    saturdayEntry: string;
-    shacharit: string;
-    musaf: string;
-    manchaSaturdayNight: string;
-    arvitSaturdayNight: string;
+    parasha: string | undefined;
+    shirHaShirim: string | undefined;
+    sunset: string | undefined;
+    manchaFridayNight: string | undefined;
+    saturdayEntry: string | undefined;
+    shacharit: string | undefined;
+    manchaSaturdayNight: string | undefined;
+    arvitSaturdayNight: string | undefined;
+    saturdayEnd: string | undefined;
 }

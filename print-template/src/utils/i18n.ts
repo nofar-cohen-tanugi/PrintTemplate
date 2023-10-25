@@ -22,6 +22,7 @@ i18n
     .init({
         fallbackLng: 'he',
         debug: true,
+        ns: 'common',
         defaultNS: 'common',
         lng: 'he',
         interpolation: {
