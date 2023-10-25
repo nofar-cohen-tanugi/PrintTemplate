@@ -39,9 +39,16 @@ export const SaturdayStyle = () => {
         }}
         ref={componentRef}
       >
-        <div className='w-full flex justify-content-center'>
+        <div className='w-full flex flex-column align-items-center mb-4'>
+          <p
+            className='absolute text-xl'
+            style={{ top: '1rem', right: '9rem' }}
+          >
+            {t('basad')}
+          </p>
+          <h1 className='text-3xl mt-6 mb-2 px-2'>{t('temaniSynagogue')}</h1>
           <h1
-            className='text-7xl'
+            className='text-5xl my-0'
             style={{
               color: titleColor,
               textShadow: `0px 2px 5px ${titleColor + '20%'}`,
@@ -54,8 +61,8 @@ export const SaturdayStyle = () => {
           {settings?.map((item) => {
             return (
               <div className='flex'>
-                <p className={'font-bold mx-2 my-4 text-5xl'}>{t(item.name)}</p>
-                <p className={'mx-2 my-4 text-5xl'}>{data?.[item.name]}</p>
+                <p className={'font-bold mx-2 my-4 text-4xl'}>{t(item.name)}</p>
+                <p className={'mx-2 my-4 text-3xl'}>{data?.[item.name]}</p>
               </div>
             );
           })}
@@ -77,7 +84,7 @@ export const SaturdayStyle = () => {
           <Button
             icon={PrimeIcons.SAVE}
             label={t('common:print')}
-            className='text-3xl w-full flex justify-self-center'
+            className='text-xl p-3 w-full flex justify-self-center'
             onClick={updateContent}
           />
         )}
@@ -85,7 +92,7 @@ export const SaturdayStyle = () => {
       <div
         style={{
           position: 'absolute',
-          top: '9rem',
+          top: '10rem',
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
@@ -98,7 +105,7 @@ export const SaturdayStyle = () => {
             );
             setGreetingColor(`rgba(${e.rgb.r}, ${e.rgb.g}, ${e.rgb.b}, 90%)`);
           }}
-          width='30rem'
+          width='15rem'
         />
       </div>
     </>
