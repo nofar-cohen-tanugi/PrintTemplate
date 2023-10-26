@@ -105,7 +105,7 @@ export const Saturday = () => {
       >
         <div>
           {inputSettings.map((item, index) => (
-            <div className='flex flex-column my-3' key={index}>
+            <div className='flex flex-column my-2' key={index}>
               <div className='flex justify-content-between align-items-center'>
                 <label className='text-3xl mx-2'>{t(item.name)}</label>
                 <Controller control={control} {...item} />

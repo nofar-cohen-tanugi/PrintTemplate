@@ -91,6 +91,7 @@ export const SaturdayStyle = () => {
         bodyClass='print-body'
         trigger={() => (
           <Button
+            style={{ marginTop: '0.5rem' }}
             icon={PrimeIcons.SAVE}
             label={t('common:print')}
             className='text-xl w-full flex justify-self-center'
