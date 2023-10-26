@@ -101,7 +101,7 @@ export const Saturday = () => {
       />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className='flex flex-column justify-content-between p-4 h-screen'
+        className='flex flex-column justify-content-between p-4'
       >
         <div>
           {inputSettings.map((item, index) => (
@@ -119,7 +119,7 @@ export const Saturday = () => {
         <Button
           icon={PrimeIcons.SAVE}
           label={t('common:save')}
-          className='text-xl p-3'
+          className='text-xl'
         />
       </form>
     </>
