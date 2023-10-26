@@ -1,0 +1,39 @@
+.print-body {
+    .saturday-style {
+        height: 96vh;
+
+        .basad {
+            font-size: 1.5rem !important;
+            display: flex;
+            align-self: flex-start;
+            padding-right: 10rem;
+            padding-top: 1rem;
+        }
+
+        .times {
+            .time-wrap {
+                margin: 2rem 0rem !important;
+
+                p {
+                    font-size: 3rem !important;
+                }
+            }
+        }
+
+        .synagogue-title {
+            font-size: 3rem !important;
+        }
+
+        .parasha-title {
+            font-size: 4rem !important;
+        }
+
+        .parasha-color-select {
+            display: none !important;
+        }
+
+        .greeting {
+            font-size: 3.8rem !important;
+        }
+    }
+}

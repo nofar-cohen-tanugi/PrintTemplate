@@ -1,0 +1,23 @@
+{
+    "basad": "בס\"ד",
+    "temaniSynagogue": "בית הכנסת התימני \n נחלת אבות",
+    "greeting": "שבת שלום",
+    "saturdayTitle": "תפילת שבת",
+    "parasha": "פרשה",
+    "shirHaShirim": "שיר שירים",
+    "sunset": "שקיעה",
+    "manchaFridayNight": "מנחה ערב שבת",
+    "saturdayEntry": "כניסת שבת",
+    "arvitFridayNight": "ערבית ערב שבת",
+    "shacharit": "שחרית של שבת",
+    "manchaSaturdayNight": "מנחה של שבת",
+    "arvitSaturdayNight": "ערבית צאת שבת",
+    "saturdayEnd": "צאת שבת",
+    "ad": {
+        "selectACity": "בחירת עיר",
+        "noResults": "לא נמצאו תוצאות"
+    },
+    "city": {
+        "kokavYair": "כוכב יאיר"
+    }
+}
