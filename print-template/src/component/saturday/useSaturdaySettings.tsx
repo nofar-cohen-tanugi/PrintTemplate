@@ -23,8 +23,8 @@ export const useSaturdaySettings = (
       saturdayEntryRef?.current &&
       saturdayEndRef?.current
     ) {
-      saturdayEntryRef.current.value = props.entry;
-      saturdayEndRef.current.value = props.end;
+      saturdayEntryRef.current.context = props.entry;
+      saturdayEndRef.current.context = props.end;
 
       saturdayEntryRefOnce.current = false;
       saturdayEndRefOnce.current = false;
