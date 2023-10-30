@@ -47,12 +47,13 @@ export const Saturday = () => {
     if (!selectedCityCode?.code) return;
 
     const res = await getTimes(selectedCityCode.code);
+    console.log(res?.items);
 
-    setValue('parasha', res?.items?.[2]?.hebrew);
-    const entry = moment(res?.items?.[1]?.date).format('HH:mm');
-    const end = moment(res?.items?.[3]?.date).format('HH:mm');
+    setValue('parasha', res?.items?.[1]?.hebrew);
+    const entry = moment(res?.items?.[0]?.date).format('HH:mm');
+    const end = moment(res?.items?.[2]?.date).format('HH:mm');
     setSaturdayTimes({ entry, end });
-  }, [selectedCityCode?.code, setValue]);
+  }, [selectedCityCode?.code]);
 
   useEffect(() => {
     if (selectedCityCode) {

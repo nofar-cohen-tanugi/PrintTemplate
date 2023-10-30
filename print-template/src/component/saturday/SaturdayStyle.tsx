@@ -28,13 +28,14 @@ export const SaturdayStyle = () => {
   });
 
   return (
-    <div className='w-full flex flex-column align-items-center justify-content-around'>
+    <div className='w-full h-screen flex flex-column align-items-center justify-content-around'>
       <div
-        className='saturday-style w-full flex flex-column justify-content-between'
+        className='saturday-style w-full flex flex-column justify-content-around'
         style={{
           backgroundImage: 'url("../public/images/frame.png")',
           backgroundSize: '100% 100%',
           backgroundRepeat: 'no-repeat',
+          height: '90%',
         }}
         ref={componentRef}
       >
@@ -52,7 +53,7 @@ export const SaturdayStyle = () => {
           >
             {data?.['parasha']}
           </h1>
-          <div className='parasha-color-select'>
+          <div className='parasha-color-select pt-1'>
             <HuePicker
               onChange={(e) => {
                 setTitleColor(
@@ -69,7 +70,7 @@ export const SaturdayStyle = () => {
         <div className='px-4 times'>
           {settings?.map((item, index) => {
             return (
-              <div className='flex my-4 time-wrap' key={index}>
+              <div className='flex my-3 time-wrap' key={index}>
                 <p className={'font-bold mx-2 my-0 text-2xl'}>{t(item.name)}</p>
                 <p className={'mx-2 my-0 text-2xl'}>{data?.[item.name]}</p>
               </div>
