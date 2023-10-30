@@ -53,7 +53,7 @@ export const Saturday = () => {
     const entry = moment(res?.items?.[0]?.date).format('HH:mm');
     const end = moment(res?.items?.[2]?.date).format('HH:mm');
     setSaturdayTimes({ entry, end });
-  }, [selectedCityCode?.code]);
+  }, [selectedCityCode?.code, setValue]);
 
   useEffect(() => {
     if (selectedCityCode) {

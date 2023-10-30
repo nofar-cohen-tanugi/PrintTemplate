@@ -1,9 +1,9 @@
 import { HomePage } from './component/home/HomePage';
 import { Route, Routes } from 'react-router-dom';
-import '../public/style/index.scss';
-import './utils/i18n';
 import { SaturdayStyle } from './component/saturday/SaturdayStyle';
 import { Saturday } from './component/saturday/Saturday';
+import '../public/style/index.scss';
+import './utils/i18n';
 
 function App() {
   return (
