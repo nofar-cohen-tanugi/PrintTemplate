@@ -30,11 +30,12 @@ export const SaturdayStyle = () => {
   return (
     <div className='w-full h-screen flex flex-column align-items-center justify-content-around'>
       <div
-        className='saturday-style w-full flex flex-column justify-content-around'
+        className='saturday-style w-full flex flex-column justify-content-around my-1'
         style={{
-          backgroundImage: 'url("../public/images/frame.png")',
-          backgroundSize: '100% 100%',
+          backgroundImage: 'url("/images/frame.png")',
+          backgroundSize: '98% 100%',
           backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
           height: '90%',
         }}
         ref={componentRef}
