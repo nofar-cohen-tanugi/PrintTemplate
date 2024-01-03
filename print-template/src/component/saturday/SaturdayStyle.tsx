@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useSaturdaySettings } from './useSaturdaySettings';
 import { useMemo, useRef, useState } from 'react';
 import ReactToPrint, { useReactToPrint } from 'react-to-print';
-import { HuePicker } from 'react-color';
+import Hue from 'react-color/lib/components/hue/Hue';
 
 export const SaturdayStyle = () => {
   const { t } = useTranslation(['saturday', 'common'], { lng: 'he' });
@@ -55,7 +55,7 @@ export const SaturdayStyle = () => {
             {data?.['parasha']}
           </h1>
           <div className='parasha-color-select pt-1'>
-            <HuePicker
+            <Hue
               onChange={(e) => {
                 setTitleColor(
                   `rgba(${e.rgb.r}, ${e.rgb.g}, ${e.rgb.b}, ${e.rgb?.a})`

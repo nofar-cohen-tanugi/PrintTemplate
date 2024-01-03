@@ -1,6 +1,7 @@
 .print-body {
     .saturday-style {
-        height: 96vh;
+        margin-top: 2rem !important;
+        height: 100vh;
 
         .basad {
             font-size: 1.5rem !important;
@@ -11,6 +12,8 @@
         }
 
         .times {
+            margin: 0 2rem;
+
             .time-wrap {
                 margin: 2rem 0rem !important;
 
